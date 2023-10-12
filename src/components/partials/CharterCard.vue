@@ -10,8 +10,8 @@ export default {
 
 <template>
   <div class="collonne">
-    <div class="sc-card">
-      <img src="https://images.ygoprodeck.com/images/cards_small/34541863.jpg" alt="">
+    <div class=" card sc-card">
+      <img :src="cardObj.card_images[0].image_url" alt="">
       <h4 >{{ cardObj.name }}</h4>
       <p> {{  cardObj.archetype  }}</p>
     </div>
@@ -27,16 +27,22 @@ export default {
   width: calc(100% / 5);
 
   .sc-card{
-      width: 168px;
+      width: 220px;
       height: 100%;
       text-align: center;
       background-color: #d48f38;
       margin-top: 15px;
       h4{
-        padding-top: 20px;
+        padding-top: 10px;
         color: white;
       }
+
+      img{
+        width: 220px;
+      }
     }
+
+
 }
     
 </style>

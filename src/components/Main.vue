@@ -2,12 +2,16 @@
 <script>
 
 import {store} from '../data/store';
-import CharterCard from './partials/CharterCard.vue'
+import CharterCard from './partials/CharterCard.vue';
+import Result from './partials/Result.vue';
+
 
 export default {
   name: 'Main',
+
   components:{
-    CharterCard
+    CharterCard,
+    Result
   },
   data() {
     return {
@@ -23,6 +27,8 @@ export default {
 <template>
   <main>
     <div class="container ">
+      
+      <Result />
     <div class=" container-my">
       
         <CharterCard  v-for="item in store.charterList" 
@@ -47,7 +53,6 @@ export default {
       display: flex;
       flex-wrap: wrap;
       background-color: white;
-      margin-top: 40px;
       padding-bottom: 20px;
     }
   }
