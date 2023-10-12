@@ -1,4 +1,9 @@
-
+@use './partials/variabiles.scss' as *;
 @import '@fontsource/montserrat/400.css';
 @import '@fontsource/montserrat/700.css';
 @import 'bootstrap/scss/bootstrap';
+
+
+body{
+  font-family: $main-font;
+}
